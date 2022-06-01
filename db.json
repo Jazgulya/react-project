@@ -1,16 +1,9 @@
 {
   "products": [
     {
-      "title": "hbj",
-      "description": "kj",
-      "price": "kn",
-      "image": "https://img.fonwall.ru/o/57/reka-vodopad-kamni-derevya.jpg",
-      "id": 1
-    },
-    {
-      "title": "hbj",
-      "description": "kj",
-      "price": "kn",
+      "title": "Jazgul",
+      "description": "Kanybekova",
+      "price": "16565232",
       "image": "https://img.fonwall.ru/o/57/reka-vodopad-kamni-derevya.jpg",
       "id": 2
     }
