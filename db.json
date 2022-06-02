@@ -3,9 +3,37 @@
     {
       "title": "Jazgul",
       "description": "Kanybekova",
-      "price": "16565232",
-      "image": "https://img.fonwall.ru/o/57/reka-vodopad-kamni-derevya.jpg",
+      "price": 5454,
+      "image": "https://jooinn.com/images/stack-of-books-28.jpg",
       "id": 2
+    },
+    {
+      "title": "nbv",
+      "description": "mjbn",
+      "price": 200,
+      "image": "524",
+      "id": 3
+    },
+    {
+      "title": "Jazi",
+      "description": "sdc",
+      "price": 5000,
+      "image": "wefcwec",
+      "id": 4
+    },
+    {
+      "title": "sdvdfvs",
+      "description": "sdv",
+      "price": 123,
+      "image": "dfvdfv",
+      "id": 5
+    },
+    {
+      "title": "sv",
+      "description": "sdv",
+      "price": 500,
+      "image": "sdvsv",
+      "id": 6
     }
   ]
 }
