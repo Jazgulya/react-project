@@ -10,7 +10,7 @@ const ProductsList = () => {
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   const [search, setSearch] = useState(
-    searchParams.get("q") ? searchParams.get("q") : ""
+    searchParams.get("") ? searchParams.get("q") : ""
   );
   const [price, setPrice] = useState([1, 10000]);
   const [page, setPage] = useState(1);
