@@ -32,7 +32,7 @@ const ProductsList = () => {
     getProducts();
   }, [searchParams]);
 
-  console.log(page);
+  // console.log(page);
   //   console.log(searchParams.get("q"));
   //   console.log(window.location.search);
   return (

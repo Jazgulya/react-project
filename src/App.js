@@ -7,14 +7,17 @@ import Footer from "./components/Footer/Footer";
 import "./App.css";
 import ProductsContextProvider from "./contexts/productsContext";
 import AuthContextProvider from "./contexts/authContext";
+import CartContextProvider from "./contexts/cartContext";
 
 const App = () => {
   return (
     <AuthContextProvider>
       <ProductsContextProvider>
-        <Header />
-        <Routing />
-        <Footer />
+        <CartContextProvider>
+          <Header />
+          <Routing />
+          <Footer />
+        </CartContextProvider>
       </ProductsContextProvider>
     </AuthContextProvider>
   );
