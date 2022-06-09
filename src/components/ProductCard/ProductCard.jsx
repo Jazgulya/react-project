@@ -14,8 +14,10 @@ import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import { useNavigate } from "react-router-dom";
 import { productsContext } from "../../contexts/productsContext";
 import { cartContext } from "../../contexts/cartContext";
+import { authContext } from "../../contexts/authContext";
 
 const ProductCard = ({ item }) => {
+  const { isAdmin } = useContext(authContext);
   const navigate = useNavigate();
   const { deleteProduct } = useContext(productsContext);
   const { addProductToCart, checkProductInCart } = useContext(cartContext);
@@ -42,12 +44,17 @@ const ProductCard = ({ item }) => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" onClick={() => deleteProduct(item.id)}>
-          <DeleteIcon />
-        </Button>
-        <Button size="small" onClick={() => navigate(`/edit/${item.id}`)}>
-          <EditIcon />
-        </Button>
+        {isAdmin ? (
+          <>
+            <Button size="small" onClick={() => deleteProduct(item.id)}>
+              <DeleteIcon />
+            </Button>
+            <Button size="small" onClick={() => navigate(`/edit/${item.id}`)}>
+              <EditIcon />
+            </Button>
+          </>
+        ) : null}
+
         <Button
           size="small"
           onClick={() => {
